@@ -1,0 +1,14 @@
+[package]
+name = "bench-merman"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+merman = { version = "0.8.0-alpha.1", features = ["render"] }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "bench"
+harness = false
